@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=producer'
+      - 'POSTGRES_PASSWORD=producer'
+      - 'POSTGRES_USER=producer'
+    ports:
+      - '5432:5432'
